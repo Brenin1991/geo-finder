@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJl74YM9eGLcD0IModr-quILXy076LAw&libraries=places,marker"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="street-view"></div>
+        
+        <div class="overlay">
+            <header>
+                <h1>Geo Finder</h1>
+                <div class="score-container">
+                    <span>Pontuação: </span>
+                    <span id="score">0</span>
+                </div>
+            </header>
+
+            <div class="game-container">
+                <div id="map"></div>
+                <div class="controls">
+                    <button id="guess-btn">Fazer Palpite</button>
+                    <button id="next-round-btn" disabled>Próximo Round</button>
+                </div>
+            </div>
+
+            <div id="result" class="hidden">
+                <h2>Resultado</h2>
+                <p>Distância: <span id="distance"></span></p>
+                <p>Pontos ganhos: <span id="points-earned"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
